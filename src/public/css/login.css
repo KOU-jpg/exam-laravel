@@ -1,0 +1,142 @@
+.header__inner {
+    display: flex;
+    /* 横並びに配置 */
+    justify-content: center;
+    /* コンテンツを中央揃え */
+    align-items: center;
+    /* 縦方向で中央揃え */
+    position: relative;
+    /* ログインリンクの位置調整のため */
+}
+
+.header__register{
+    font-size: 14px;
+    color: #8B7968;
+    /* 薄茶色 */
+    background: #f5f5f5;
+    /*灰色*/
+    text-decoration: none;
+    /* 下線を消す */
+    padding: 5px 30px;
+    border: solid 1px #8B7968;
+    /* 枠線を追加 */
+    border-radius: 5px;
+    /* 少し角を丸くする */
+    position: absolute;
+    /* ログインリンクを絶対位置で配置 */
+    right: 15px;
+    /* ヘッダー右端に配置 */
+}
+
+.header__register:hover {
+    background-color: #8B7968;
+    /* ホバー時の背景色 */
+    color: #ffffff;
+    /* ホバー時の文字色 */
+}
+
+/* メインコンテンツ */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 100%;    /* 画面全体の高さを確保 */
+    background-color: #f8f4eb;    /* 背景色 */
+
+}
+
+.content-title {
+    font-size: 36px;
+    /* タイトルの文字サイズ */
+    color: #8b7968;
+    /* 薄茶色 */
+    font-weight: normal;
+    /* 太字を解除 */
+    margin: 48px;
+    /* タイトル下に余白を追加 */
+
+}
+
+/* 登録フォーム全体のスタイル */
+.login-container {
+    background-color: #ffffff;
+    /* 白色の背景色 */
+    padding: 5%;
+    /* 内側の余白を追加 */
+    border-radius: 10px;
+    /* 少し角を丸くする */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* 軽い影を追加 */
+    width: 40%;
+    margin-bottom: 5%;
+}
+
+.login-form label {
+    display: block;
+    font-size: 16px;
+    /* ラベルの文字サイズ */
+    color: #8b7968;
+    /* 薄茶色 */
+    margin-bottom: 12px;
+
+}
+
+.login-form input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 16px;
+    /* 入力欄内の余白 */
+    margin-bottom: 4px;
+    /* 入力欄間の余白 */
+    border: none;
+    /* 枠線を削除 */
+    background-color: #f5f5f5;
+    /* 入力欄の背景色（薄い灰色） */
+}
+
+.login-form input::placeholder {
+    color: #cccccc;
+    /* プレースホルダー文字色（薄い灰色） */
+}
+
+/* ボタンのスタイル */
+.login-button-container {
+    display: flex;
+    justify-content: center;
+    /* ボタン自体を中央揃えにする */
+    margin: 30px;
+}
+
+.login-button {
+    padding: 12px 36px;
+    /* ボタン内側の余白 */
+    background-color: #8b7968;
+    /* 薄茶色の背景色 */
+    color: #ffffff;
+    /* 白い文字色 */
+    border: none;
+    /* 枠線なし */
+    border-radius: 5px;
+    /* ボタンの角を丸くする */
+}
+
+.login-button:hover {
+    background-color: #7a6b5c;
+    /* ホバー時に少し暗い茶色に変更 */
+}
+
+.error-message {
+    padding: 2px;
+    /* 内側の余白を追加 */
+    color: #ff0000;
+    /* 文字色を赤に設定 */
+    font-size: 14px;
+    /* フォントサイズを調整 */
+}
+
+.error-placeholder {
+    min-height: 30px;
+    /* エラーメッセージ用のスペースを確保 */
+}

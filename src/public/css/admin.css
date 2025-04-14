@@ -1,0 +1,451 @@
+/* ヘッダーのスタイル */
+html {
+    font-family: "Playfair Display", serif;
+
+}
+
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    border-bottom: 2px solid #f5f5f5;
+
+
+}
+
+.header__inner {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1230px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+    position: relative;
+}
+
+.header__logo {
+    color: #8B7968;
+    font-size: 30px;
+    position: absolute;
+    top: 20%;
+    
+}
+
+.header__button {
+    font-size: 16px;
+    color: #8B7968;
+    background: #f5f5f5;
+    text-decoration: none;
+    padding: 5px 30px;
+    border: solid 1px #8B7968;
+    position: absolute;
+    right: 0px;
+    top: 40%;
+}
+
+.header__button:hover {
+    background-color: #8B7968;
+    /* ホバー時の背景色 */
+    color: #ffffff;
+    /* ホバー時の文字色 */
+}
+
+main {
+    padding: 20px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* 縦方向に配置 */
+    align-items: center;
+    /* 水平方向で中央揃え */
+    justify-content: center;
+    /* 垂直方向で中央揃え（必要に応じて） */
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+
+/* タイトル pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp*/
+.admin-title {
+    display: flex;
+    font-size: 36px;
+    color: #8b7968;
+    font-weight: normal;
+    justify-content: center;
+}
+
+/* フィルターフォーム */
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: 40px auto;
+}
+
+.filter-container input,
+.filter-container select,
+.filter-container button {
+    padding: 10px;
+    border: solid 1px #8B7968;
+    font-size: 14px;
+
+}
+.filter-container select,
+.filter-container input {
+    background-color: #f3f3f3;
+}
+.filter-container input:first-of-type {
+    width: 100%;
+    max-width: 400px;
+}
+
+.filter-container input::placeholder {
+    color: #8B7968;
+}
+
+
+/* 日付入力フォーム */
+.date-input {
+    padding: 5px 10px;    /* 内側の余白を小さく調整 */
+    border: 1px solid #8b7968;    /* 薄茶色の枠線 */
+    font-size: 14px;
+    width: 130px;
+    color: #8B7968;
+}
+
+.filter-container select {
+    color: #8B7968;
+    
+}
+
+.search-button {
+    background-color: #8b7968;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    cursor: default;
+    width: 200px;
+}
+
+.search-button:hover {
+    background-color: #6e5c4e;
+}
+
+.reset-button {
+    background-color: #d3b8a1;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+    cursor: default;
+    width: 200px;
+    text-decoration: none;    
+}
+
+.reset-button:hover {
+    background-color: #b89f8c;
+    /* ホバー時に暗いベージュ色に変更 */
+}
+
+/* コンテナ全体 */
+.export-pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+
+}
+
+/* エクスポートボタン */
+.export-button {
+    padding: 10px 40px;
+    background-color: #f5f5f5;
+    /* 灰色の背景色 */
+    color: #8B7968;
+    /* テキストカラー */
+    border: none;
+    cursor: default;
+    font-size: 16px;
+}
+
+.export-button:hover {
+    background-color: #e0e0e0;
+    /* ホバー時に少し暗い灰色に変更 */
+}
+
+/* ページネーション */
+.pagination {
+    display: flex;
+    justify-content: center;
+    /* 中央揃え */
+    align-items: center;
+    /* 垂直方向で中央揃え */
+}
+
+.pagination .page-item {
+    margin: 0;
+    /* 隙間をなくす */
+}
+
+.pagination .page-link {
+    padding: 8px 12px;
+    border: 1px solid #8b7968;
+    /* 薄茶色の枠線 */
+    border-radius: 0;
+    /* ボタンの角を丸めない */
+    color: #8b7968;
+    /* 薄茶色文字 */
+    text-decoration: none;
+    /* 下線を削除 */
+    background-color: white;
+    /* 背景を白に設定 */
+    width: 40px;
+    /* 固定幅を設定してボタンサイズを統一 */
+    height: 40px;
+    /* 固定高さを設定してボタンサイズを統一 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #8b7968;
+    /* アクティブなページの背景色を薄茶色に設定 */
+    border-color: #8b7968;
+    color: white;
+    /* アクティブなページの文字色を白に設定 */
+}
+
+.pagination .page-link:hover {
+    background-color: #e6e6e6;
+    /* ホバー時の背景色を薄い灰色に設定 */
+}
+
+/* contents aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #8b7968;
+    color: #8B7968;
+}
+
+.custom-table th,
+.custom-table td {
+    border-bottom: 1px solid #ccc;
+    height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+.custom-table th:nth-child(5),
+.custom-table td:nth-child(5) {
+    text-align: center;
+}
+
+.custom-table td {
+    padding: 25px 40px;
+    text-align: left;
+
+}
+
+.custom-table th {
+    background-color: #8b7968;
+    color: white;
+    padding: 20px 40px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.custom-table tr {
+    text-align: left;
+}
+
+/* 詳細ボタンのスタイル */
+.detail-button {
+    padding: 5px 20px;
+    background-color: transparent;
+    border: solid 1px #8b7968;
+    color: #8b7968;
+    text-decoration: none;
+
+}
+
+.detail-button:hover {
+    background-color: #8b7968;
+    /* ホバー時に薄茶色の背景色に変更 */
+    color: white;
+
+}
+.modal-button {
+    transition: all 0.3s;
+    padding: 5px;
+    background-color: transparent;
+    border: solid 1px #8b7968;
+    color: #8b7968;
+    cursor: pointer;
+    max-width: 150px;
+    padding: 6px 20px;
+    text-decoration: none;
+
+}
+
+.modal-button:active {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+
+}
+
+.modal-button:hover {
+    background-color: #8b7968;
+    color: white;
+}
+/* モーダル　；；；；；；；；；；；；；；；；；；；；；；；；；；；；；；；；；；；；；；；；*/
+.modal-wrapper {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 40px ;
+    text-align: center;
+
+}
+
+.modal-wrapper:not(:target) {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s, visibility .3s;
+}
+
+.modal-wrapper:target {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .1s, visibility .1s;
+}
+
+.modal-wrapper::after {
+    display: inline-block;
+    height: 100%;
+    margin-left: -.05em;
+    vertical-align: middle;
+    content: "" ；
+}
+
+.modal-window {
+    
+    box-sizing: border-box;
+    display: inline-block;
+    z-index: 20;
+    position: relative;
+    width: 500px;
+    height:510px;
+    max-width: 1200px;
+    padding:50px 20px 100px;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .6);
+    vertical-align: middle;
+    word-break: break-word;
+    
+}
+
+.modal-table {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 20px;
+    table-layout: fixed;
+    
+
+}
+
+.modal-table th,
+.modal-table td {
+    text-align: left ; 
+    padding: 0px 15px 15px;
+    border: none;
+    vertical-align: top;
+    
+    
+}
+
+.modal-table th {
+    color: #8B7968;
+    box-sizing: border-box;
+    width: 35%;
+    padding: 0px 15px 15px;
+    
+}
+.scrollable-text {
+      height: 150px;
+      overflow-y: auto;
+      word-wrap: break-word;
+      white-space: normal;
+      max-width: 100%;
+    
+  }
+
+.modal-table td {
+    padding: 0px 0px 15px;
+}
+
+.delete-button {
+    padding: 10px 30px;
+    background-color: #cd5151;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+
+}
+
+.delete-button:hover {
+    background-color: #572323;
+}
+
+.modal-overlay {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    
+}
+
+/* 閉じるボタン（×）のスタイル */
+.modal-close {
+    z-index: 20;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #95979c;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #95979c;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.modal-close:hover {
+    background-color: #f5f5f5;
+    /* ホバー時に背景色を変更 */
+}
+

@@ -1,0 +1,349 @@
+.header__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.header__button {
+  font-size: 14px;
+  color: #8B7968;
+  /* 薄茶色 */
+  background: #f5f5f5;
+  /*灰色*/
+  text-decoration: none;
+  /* 下線を消す */
+  padding: 5px 30px;
+  border: solid 1px #8B7968;
+  /* 枠線を追加 */
+  border-radius: 5px;
+  /* 少し角を丸くする */
+  position: absolute;
+  /* ログインリンクを絶対位置で配置 */
+  right: 15px;
+  /* ヘッダー右端に配置 */
+}
+
+.header__button:hover {
+  background-color: #8B7968;
+  /* ホバー時の背景色 */
+  color: #ffffff;
+  /* ホバー時の文字色 */
+}
+
+/*--------------テーブル設定-------------------------*/
+.content {
+  margin: 0 auto;
+  padding: 40px 15px;
+  max-width: 1230px;
+
+}
+
+
+
+.content-table__inner {
+  width: 70%;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.content-table__row {
+  width: 100%;
+  align-items: center;
+  /* 垂直方向中央揃え */
+  text-align: top;
+
+}
+
+/*--------------ヘッダー-------------------------*/
+.content-table__header {
+  text-align: center;
+  font-size: 36px;
+  color: #8B7968;
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+
+
+/*--------------全体設定-------------------------*/
+
+
+
+
+
+.item__data,
+.item__form {
+  position: relative;
+  /* 子要素の絶対位置を基準とする */
+  vertical-align: middle;
+  /* 親要素の縦方向中央揃えを維持 */
+  padding: 10px;
+  /* セル内余白はそのまま維持 */
+
+}
+
+.item__form {
+  font-size: 16px;
+  width: 70%;
+  padding: 6px;
+  color: #787878;
+
+}
+
+.item__data {
+  color: #8B7968;
+  font-size: 16px;
+  Font-weight: normal;
+}
+
+.must {
+  color: red;
+}
+
+input:focus::placeholder {
+  color: transparent;
+  /* フォーカス時にプレースホルダーを透明にする */
+}
+
+textarea:focus::placeholder {
+  color: transparent;
+  /* フォーカス時にプレースホルダーを透明にする */
+}
+
+
+/*--------------１項目目-------------------------*/
+
+
+.item__form-name {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+
+}
+
+
+.item__form-input-first_name,
+.item__form-input-last_name {
+  padding: 12px;
+  border: 1px solid #000000;
+  width: 100%;
+  font-size: inherit;
+  border: none;
+  outline: none;
+  background: #f5f5f5;
+
+}
+
+.error-first_name {
+  padding: 2px;
+  /* 内側の余白を追加 */
+  color: #ff0000;
+  font-size: 14px;
+  width: 100%;
+}
+
+.error-last_name {
+  padding: 2px;
+  color: #ff0000;
+  font-size: 14px;
+  width: 100%;
+}
+
+/*--------------２項目目-------------------------*/
+
+/* ラジオボタン全体のレイアウト */
+.item__form-radio {
+  display: flex;
+  gap: 40px;
+  color: #787878;
+}
+
+/* ラジオボタンとラベルのグループ */
+.radio-group {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+/* ラベルのスタイル */
+.radio-label {
+  margin-left: 10px;
+  font-size: inherit;
+}
+
+/* ラジオボタン自体のスタイル */
+.item__form-radio-male,
+.item__form-radio-female,
+.item__form-radio-other {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  appearance: none;
+  border: 2px solid #8B7968;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+/* 選択時のスタイル */
+.item__form-radio-male:checked,
+.item__form-radio-female:checked,
+.item__form-radio-other:checked {
+  background-color: #8B7968;
+  /* 選択時に青色で埋め尽くす */
+
+}
+
+/*--------------３項目-------------------------*/
+.item__form-mail {
+  display: flex;
+}
+
+.item__form-input-mail {
+  padding: 12px;
+  border: 1px solid #000000;
+  width: 100%;
+  font-size: inherit;
+  border: none;
+  outline: none;
+  background: #f5f5f5;
+}
+
+/*--------------４項目-------------------------*/
+.item__form-tell {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.item__form-input-tell {
+  padding: 12px;
+  border: 1px solid #000000;
+  width: 100%;
+  font-size: inherit;
+  border: none;
+  outline: none;
+  background: #f5f5f5;
+}
+
+.hyphen {
+  margin: auto;
+}
+
+/*--------------５項目-------------------------*/
+.item__form-address {
+  display: flex;
+}
+
+.item__form-input-address {
+  padding: 12px;
+  border: 1px solid #000000;
+  width: 100%;
+  font-size: inherit;
+  border: none;
+  outline: none;
+  background: #f5f5f5;
+}
+
+/*--------------６項目-------------------------*/
+.item__form-building {
+  display: flex;
+}
+
+
+.item__form-input-building {
+  padding: 12px;
+  border: 1px solid #000000;
+  width: 100%;
+  font-size: inherit;
+  border: none;
+  outline: none;
+  background: #f5f5f5;
+}
+
+
+/*--------------７項目-------------------------*/
+.item__form-select-contact {
+  padding: 12px;
+  border: 1px solid #000000; 
+  width: 60%;
+  border: none;
+  outline: none;
+  background: #f5f5f5;
+  color: #787878;
+  font-size: 16px;
+}
+
+/*--------------８項目-------------------------*/
+
+.item__data-detail {
+  position: absolute;
+  /* 絶対位置指定 */
+  top: 8px;
+  /* 上端をテキストエリアと一致させる */
+  left: 30px;
+  /* 左端はそのまま維持 */
+}
+
+.item__form-detail {
+  display: flex;
+  width: 100%;
+
+}
+
+textarea {
+  resize: none;
+
+}
+
+.item__form-input-detail {
+
+  padding: 12px;
+  width: 100%;
+  lid: #000000;
+  font-size: inherit;
+  border: none;
+  outline: none;
+  background: #f5f5f5;
+}
+
+/*--------------確認画面-------------------------*/
+
+
+.content-form__button {
+  display: block;
+  margin: 36px auto;
+  padding: 12px 48px;
+  text-align: center;
+  background-color: #8B7968;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.content-form__button:hover {
+  background-color: #7a6b5c;
+  /* ホバー時の背景色を少し暗くする */
+}
+
+.error-message {
+  padding: 2px;
+  /* 内側の余白を追加 */
+  color: #ff0000;
+  /* 文字色を赤に設定 */
+  font-size: 14px;
+  /* フォントサイズを調整 */
+}
+
+.error-placeholder {
+  display: flex;
+  /* 横並びにする */
+  min-height: 30px;
+  /* エラーメッセージ用のスペースを確保 */
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}

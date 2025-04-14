@@ -1,0 +1,622 @@
+/* ヘッダーのスタイル */
+html {
+    font-family: "Playfair Display", serif;
+
+}
+
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    border-bottom: 2px solid #f5f5f5;
+
+
+}
+
+.header__inner {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1230px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+    position: relative;
+}
+
+.header__logo {
+    color: #8B7968;
+    font-size: 30px;
+    position: absolute;
+    top: 20%;
+    
+}
+
+.header__button {
+    font-size: 16px;
+    color: #8B7968;
+    background: #f5f5f5;
+    text-decoration: none;
+    padding: 5px 30px;
+    border: solid 1px #8B7968;
+    position: absolute;
+    right: 0px;
+    top: 40%;
+}
+
+.header__button:hover {
+    background-color: #8B7968;
+    /* ホバー時の背景色 */
+    color: #ffffff;
+    /* ホバー時の文字色 */
+}
+
+main {
+    padding: 20px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* 縦方向に配置 */
+    align-items: center;
+    /* 水平方向で中央揃え */
+    justify-content: center;
+    /* 垂直方向で中央揃え（必要に応じて） */
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+
+/* タイトル pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp*/
+.admin-title {
+    font-size: 36px;
+    color: #8b7968;
+    /* 薄茶色 */
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: normal;
+
+}
+
+/* フィルターフォーム */
+.filter-container {
+    display: flex;
+    /* Flexboxを使用 */
+    justify-content: space-between;
+    /* 両端から均等に配置 */
+    align-items: center;
+    /* 垂直方向で中央揃え */
+    gap: 10px;
+    /* 要素間の間隔 */
+    margin: 40px auto;
+}
+
+.filter-container input,
+.filter-container select,
+.filter-container button {
+    padding: 10px;
+    border: solid 1px #8B7968;
+    font-size: 16px;
+
+}
+
+/* 名前メアド入力欄 */
+.filter-container input:first-of-type {
+    width: 100%;
+    /* 入力欄の幅を親要素内で最大化 */
+    max-width: 400px;
+    /* 入力欄の最大幅を指定 */
+}
+
+.filter-container input::placeholder {
+    color: #8B7968;
+    /* プレースホルダー文字色を薄茶色に変更 */
+}
+
+
+/* 日付入力フォーム */
+.date-input {
+    padding: 5px 10px;
+    /* 内側の余白を小さく調整 */
+    border: 1px solid #8b7968;
+    /* 薄茶色の枠線 */
+    font-size: 14px;
+    /* フォントサイズを小さく調整 */
+    width: 150px;
+    /* 入力欄の幅を調整 */
+    background-color: #fdfdfd;
+    /* 背景色 */
+    color: #8B7968;
+    /*薄茶色*/
+}
+
+/* 検索ボタン */
+.filter-container select {
+    color: #8B7968;
+    /*薄茶色*/
+}
+
+.search-button {
+    background-color: #8b7968;
+    /* 薄茶色の背景色 */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    /* 背景色の変化を滑らかに */
+    cursor: default;
+}
+
+.search-button:hover {
+    background-color: #6e5c4e;
+    /* ホバー時に暗い茶色に変更 */
+}
+
+/* リセットボタン */
+.reset-button {
+    background-color: #d3b8a1;
+    /* ベージュ色の背景色 */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    /* 背景色の変化を滑らかに */
+    cursor: default;
+}
+
+.reset-button:hover {
+    background-color: #b89f8c;
+    /* ホバー時に暗いベージュ色に変更 */
+}
+
+/* コンテナ全体 */
+.export-pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+
+}
+
+/* エクスポートボタン */
+.export-button {
+    padding: 10px 40px;
+    background-color: #f5f5f5;
+    /* 灰色の背景色 */
+    color: #8B7968;
+    /* テキストカラー */
+    border: none;
+    cursor: default;
+    font-size: 16px;
+}
+
+.export-button:hover {
+    background-color: #e0e0e0;
+    /* ホバー時に少し暗い灰色に変更 */
+}
+
+/* ページネーション */
+.pagination {
+    display: flex;
+    justify-content: center;
+    /* 中央揃え */
+    align-items: center;
+    /* 垂直方向で中央揃え */
+}
+
+.pagination .page-item {
+    margin: 0;
+    /* 隙間をなくす */
+}
+
+.pagination .page-link {
+    padding: 8px 12px;
+    border: 1px solid #8b7968;
+    /* 薄茶色の枠線 */
+    border-radius: 0;
+    /* ボタンの角を丸めない */
+    color: #8b7968;
+    /* 薄茶色文字 */
+    text-decoration: none;
+    /* 下線を削除 */
+    background-color: white;
+    /* 背景を白に設定 */
+    width: 40px;
+    /* 固定幅を設定してボタンサイズを統一 */
+    height: 40px;
+    /* 固定高さを設定してボタンサイズを統一 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #8b7968;
+    /* アクティブなページの背景色を薄茶色に設定 */
+    border-color: #8b7968;
+    color: white;
+    /* アクティブなページの文字色を白に設定 */
+}
+
+.pagination .page-link:hover {
+    background-color: #e6e6e6;
+    /* ホバー時の背景色を薄い灰色に設定 */
+}
+
+/* contents aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #8b7968;
+    color: #8B7968;
+}
+
+.custom-table th,
+.custom-table td {
+    border-bottom: 1px solid #ccc;
+    height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+.custom-table td {
+    padding: 25px 40px;
+    text-align: left;
+
+}
+
+.custom-table th {
+    background-color: #8b7968;
+    color: white;
+    padding: 20px 40px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.custom-table tr {
+    text-align: left;
+}
+
+/* 詳細ボタンのスタイル */
+.detail-button {
+    padding: 5px 20px;
+    background-color: transparent;
+    border: solid 1px #8b7968;
+    color: #8b7968;
+    text-decoration: none;
+
+}
+
+.detail-button:hover {
+    background-color: #8b7968;
+    /* ホバー時に薄茶色の背景色に変更 */
+    color: white;
+
+}
+
+/* モーダル　；；；；；；；；；；；；；；；；；；；；；；；；；；；；；；；；；；；；；；；；*/
+.modal-wrapper {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 40px 10px;
+    text-align: center;
+    height:100vh;
+
+}
+
+.modal-wrapper:not(:target) {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s, visibility .3s;
+}
+
+.modal-wrapper:target {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .1s, visibility .1s;
+}
+
+.modal-wrapper::after {
+    display: inline-block;
+    height: 100%;
+    margin-left: -.05em;
+    vertical-align: middle;
+    content: "" ；
+}
+
+.modal-window {
+    box-sizing: border-box;
+    display: inline-block;
+    z-index: 20;
+    position: relative;
+    width: 60%;
+    max-width: 1200px;
+    padding:50px 60px 50px 60px;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .6);
+    vertical-align: middle;
+    height: 100%;
+}
+
+.modal-table {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.modal-table th,
+.modal-table td {
+    text-align: left; 
+    padding: 10px;
+    border: none;
+}
+
+.modal-table .long-text td {
+    white-space: normal;
+}
+
+.modal-table th {
+    background: #ffffff;
+    color: #8B7968;
+    box-sizing: border-box;
+    width: 30%;
+}
+
+
+.modal-wrapper .modal-window modal-table {
+    display: inline-block;
+
+    overflow-y: auto;
+    text-align: left
+}
+
+.modal-overlay {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+}
+.modal-button {
+    transition: all 0.3s;
+    padding: 5px;
+    background-color: transparent;
+    border: solid 1px #8b7968;
+    color: #8b7968;
+    cursor: pointer;
+    max-width: 150px;
+    padding: 6px 20px;
+    text-decoration: none; 
+}
+
+.modal-button:active {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+
+}
+
+.modal-button:hover {
+    background-color: #8b7968;
+    color: white;
+}
+/* 閉じるボタン（×）のスタイル */
+.modal-close {
+    z-index: 20;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #95979c;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #95979c;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.modal-close:hover {
+    background-color: #f5f5f5;
+    /* ホバー時に背景色を変更 */
+}
+
+/* ホバー時のスタイル */
+.delete-button:hover {
+    background-color: #cc3333;
+    /* ホバー時に濃い赤色に変更 */
+}
+
+/* 削除確認モーダルのボタン配置 */
+/* ボタンコンテナ */
+.confirm-buttons {
+    display: flex;
+    /* Flexboxを使用 */
+    justify-content: center;
+    /* ボタンを中央揃え */
+    gap: 20px;
+    /* ボタン間の間隔を設定 */
+    margin-top: 20px;
+    /* 上部に余白を追加 */
+}
+
+/* 削除ボタンのスタイル */
+.delete-button {
+    margin: 0 auto;
+    padding: 10px 30px;
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+/* ホバー時のスタイル */
+.delete-button:hover {
+    background-color: #cc3333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modal-wrapper2 {
+    z-index: 1001;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 40px 10px;
+    text-align: center;
+    height:100vh;
+
+}
+
+.modal-wrapper2:not(:target) {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s, visibility .3s;
+}
+
+.modal-wrapper2:target {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .1s, visibility .1s;
+}
+
+.modal-wrapper2::after {
+    display: inline-block;
+    height: 100%;
+    margin-left: -.05em;
+    vertical-align: middle;
+    content: "" ；
+}
+
+.modal-window2 {
+    box-sizing: border-box;
+    display: inline-block;
+    z-index: 20;
+    position: relative;
+    width: 60%;
+    max-width: 1200px;
+    padding:50px 60px 50px 60px;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .6);
+    vertical-align: middle;
+    height: 100%;
+}
+.modal-overlay2 {
+    z-index: 15;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 削除確認モーダルのボタン配置 */
+/* ボタンコンテナ */
+.confirm-buttons {
+    display: flex;
+    /* Flexboxを使用 */
+    justify-content: center;
+    /* ボタンを中央揃え */
+    gap: 20px;
+    /* ボタン間の間隔を設定 */
+    margin-top: 20px;
+    /* 上部に余白を追加 */
+}
+
+/* ボタンコンテナ */
+.confirm-buttons {
+    display: flex;
+    /* Flexboxを使用 */
+    justify-content: center;
+    /* ボタンを中央揃え */
+    gap: 80px;
+    /* ボタン間の間隔を広げる */
+    margin-top: 40px;
+    /* 上部に余白を追加 */
+}
+
+/* 共通ボタンスタイル */
+.confirm-yes,
+.confirm-no {
+    padding: 8px 24px;
+    /* ボタン内の余白を調整 */
+    border: none;
+    /* 枠線なし */
+    cursor: pointer;
+    /* ポインタカーソルを表示 */
+    font-size: 16px;
+    /* ボタン文字サイズを24pxに設定 */
+    transition: background-color 0.3s ease;
+    /* 背景色の変化を滑らかに */
+}
+
+/* 「はい」ボタンスタイル */
+.confirm-yes {
+    background-color: #ff6666;
+    /* 赤色背景 */
+    color: white;
+    /* 白文字色 */
+}
+
+.confirm-yes:hover {
+    background-color: #cc3333;
+    /* ホバー時に濃い赤色に変更 */
+}
+
+/* 「いいえ」ボタンスタイル */
+.confirm-no {
+    background-color: #f0f0f0;
+    /* 薄いグレー背景 */
+    color: #333;
+    /* 黒文字色 */
+}
+
+.confirm-no:hover {
+    background-color: #d6d6d6;
+    /* ホバー時に少し濃いグレーに変更 */
+}
